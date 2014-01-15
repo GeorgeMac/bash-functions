@@ -5,7 +5,6 @@ function guard-it {
   elif [[ $1 = "stop" ]]; then
       screen -X -S guard kill
       echo "Attempting to kill guard in screen. Please check screen (screen -ls)"
-      screen -ls
   elif [[ $1 = "view" ]]; then
       screen -r guard
   else
